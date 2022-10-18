@@ -1,0 +1,490 @@
+@import "null.css";
+/* ============================================================================================================================= */
+/*====== Подключаемые Шрифты======= */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+/*====================================== */
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0px auto;
+}
+
+.header {
+}
+.header__title{
+	font-size: 30px;
+	padding: 10px 0px;
+	text-align: center;
+	color: rgb(21, 6, 29);
+	font-weight: 700;
+	letter-spacing: 2px;
+	background: url("../img/fon.jpg") 0 0 repeat;
+}
+
+/* ===============    MAIN    =========================================== */
+/* ============   sun   ============================= */
+.main {
+	overflow: hidden;
+}
+.main__container {
+	width: 1200px;
+	height: 700px;
+	background:url("../img/sky.png") 0 0/cover;
+	position: relative;
+}
+.image{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 700px;
+}
+.main__sun {
+}
+.sun {
+	position: absolute;
+	top: 00px;
+	left: 0px;
+	width: 1200px;
+	height: 500px;
+	z-index: 1;
+	overflow: hidden;
+
+}
+.sun__sunbeams {
+}
+.sun__sunbeam {
+	width: 800px;
+	height: 50px;
+	background: linear-gradient(90deg, rgba(246,242,3,1) 0%, rgba(250,110,17,1) 84%, rgba(251,3,21,0.6895133053221288) 100%);
+	border-radius: 18% 82% 81% 19% / 54% 44% 56% 46% ;
+	box-shadow: 40px 0px 20px 10px rgba(255, 175, 3, 0.863);
+}
+.sun__sunbeam:nth-child(1){
+	position: absolute;
+	top:320px ;
+	left:550px;
+}
+.sun__sunbeam:nth-child(2){
+	position: absolute;
+	top:330px ;
+	left:550px;
+	transform: rotate(-20deg);
+	transform-origin: top left;
+	
+}
+.sun__sunbeam:nth-child(3){
+	position: absolute;
+	top:330px ;
+	left:610px;
+	transform: rotate(-60deg);
+	transform-origin: top left;
+	
+}
+.sun__sunbeam:nth-child(4){
+	position: absolute;
+	top:320px ;
+	left:590px;
+	transform: rotate(-95deg);
+	transform-origin: top left;
+	
+}
+.sun__sunbeam:nth-child(5){
+	position: absolute;
+	top:320px ;
+	left:570px;
+	transform: rotate(-135deg);
+	transform-origin: top left;
+	
+}
+.sun__sunbeam:nth-child(6){
+	position: absolute;
+	top:320px ;
+	left:550px;
+	transform: rotate(-170deg);
+	transform-origin: top left;
+	
+}
+.sun__circle {
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	top: 200px;
+	left: 500px;
+	background-color: rgb(252, 206, 1);
+	box-shadow: 0px 0px 40px 40px rgba(255, 175, 3, 0.863);
+	border-radius: 48% 52% 50% 50% / 100% 100% 0% 0% ;
+	transform: rotate(8deg);
+	transform-origin: 0 0;
+}
+/* ==========  flowers ==================== */
+
+.flowers {
+
+}
+
+.flower {
+	width: 70px;
+	height: 70px;
+	z-index: 4;
+}
+.flower__leafs {
+}
+.flower--yellow .flower__leaf{
+	background-color: rgb(255, 230, 1);
+}
+.flower--blue .flower__leaf{
+	background-color: rgb(1, 26, 255);
+}
+.flower--purple .flower__leaf{
+	background-color: rgb(175, 1, 255);
+}
+.flower__circle {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 20px;
+	height: 20px;
+	border-radius:50% ;
+	background-color: rgb(251, 255, 1);
+	
+}
+.flower--yellow .flower__circle {
+	background-color: rgb(255, 1, 1);
+}
+.flower__leaf {
+	border-radius:35% 65% 65% 35% / 54% 51% 49% 46% ;
+	background-color: rgb(255, 1, 1);
+	border:3px dotted rgb(253, 216, 3);
+}
+.flower__leaf:nth-child(1){
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 40px;
+	height: 20px;
+}
+
+.flower__leaf:nth-child(2){
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 40px;
+	height: 20px;
+	transform-origin: 10px 10px;
+	transform: rotate(-72deg);
+}
+.flower__leaf:nth-child(3){
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 40px;
+	height: 20px;
+	transform-origin: 10px 10px;
+	transform: rotate(-144deg);
+}
+.flower__leaf:nth-child(4){
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 40px;
+	height: 20px;
+	transform-origin: 10px 10px;
+	transform: rotate(144deg);
+}
+.flower__leaf:nth-child(5){
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: 40px;
+	height: 20px;
+	transform-origin: 10px 10px;
+	transform: rotate(72deg);
+}
+.flowers__flower:nth-child(1) {
+	position: absolute;
+	top: 560px;
+	left: 800px;
+	transform: scale(0.2);
+}
+.flowers__flower:nth-child(1):hover{
+	transform: rotate(40deg);
+	transition: all 0.3s ease 0s;
+} 
+.flowers__flower:nth-child(2) {
+	position: absolute;
+	top: 540px;
+	left: 880px;
+	transform: scale(0.2);
+}
+.flowers__flower:nth-child(2):hover{
+	transform: rotate(40deg);
+	transition: all 0.3s ease 0s;
+} 
+.flowers__flower:nth-child(3) {
+	position: absolute;
+	top: 500px;
+	left: 1100px;
+	transform: scale(0.5);
+}
+.flowers__flower:nth-child(3):hover{
+	transform: rotate(20deg);
+	transition: all 0.3s ease 0s;
+} 
+.flowers__flower:nth-child(4) {
+	position: absolute;
+	top: 480px;
+	left: 1000px;
+	transform: scale(0.7);
+
+}
+.flowers__flower:nth-child(4):hover{
+	transform: rotate(-50deg);
+	transition: all 1s ease 0s;
+} 
+.flowers__flower:nth-child(5) {
+	position: absolute;
+	top: 470px;
+	left: 1070px;
+	transform: scale(0.25);
+
+}
+.flowers__flower:nth-child(5):hover{
+	transition: all 0.5s ease 0s;
+	transform: rotate(-150deg);
+
+} 
+.flowers__flower:nth-child(6) {
+	position: absolute;
+	top: 520px;
+	left: 980px;
+	transform: scale(0.25);
+
+}
+.flowers__flower:nth-child(6):hover{
+	transition: all 1s ease 0s;
+	transform: rotate(-360deg);
+
+} 
+.flowers__flower:nth-child(7) {
+	position: absolute;
+	top: 505px;
+	left: 1040px;
+	transform: scale(0.6);
+
+}
+.flowers__flower:nth-child(7):hover{
+	transition: all 0.3s ease 0s;
+	transform-origin: center;
+	transform: rotate(90deg) translate(5px, 5px);
+
+} 
+.flowers__flower:nth-child(8) {
+	position: absolute;
+	top: 530px;
+	left: 840px;
+	transform: scale(0.2);
+}
+.flowers__flower:nth-child(8):hover{
+	transition: all 1s ease 0s;
+	transform: rotate(180deg);
+} 
+/* ==============  apples   ================== */
+
+.apples {
+}
+.apples__apple {
+}
+.apple {
+	z-index: 6;
+}
+.apple__body{
+	width: 40px;
+	height: 40px;
+	z-index: 6;
+}
+.apple__twig {
+	position: absolute;
+	top: 0px;
+	left:19px;
+	width: 3px;
+	height: 30px;
+	background-color: rgb(110, 41, 1);
+}
+
+.apple__left-part {
+	position: absolute;
+	top: 10px;
+	left:0;
+	width: 20px;
+	height: 30px;
+	border-radius:59% 41% 0% 100% / 44% 10% 90% 56%  ;
+	background: linear-gradient(328deg, rgba(246,242,3,1) 0%, rgba(250,110,17,1) 49%, rgba(251,3,21,1) 100%);
+}
+.apple__right-part {
+	position: absolute;
+	top: 10px;
+	left:20PX;
+	width: 20px;
+	height: 30px;
+	border-radius:37% 63% 100% 0% / 10% 47% 53% 90% ;
+	background: linear-gradient(59deg, rgba(246,242,3,1) 0%, rgba(250,110,17,1) 49%, rgba(251,3,21,1) 100%);
+}
+
+.apples__apple:nth-child(1) {
+	position: absolute;
+	top: 300px;
+	left:430px;
+}
+.apples__apple:nth-child(1):hover .apple__body{
+	transform:translate(-100%,0) scale(0.7) rotate(-20deg);
+	transition: all 0.3s ease 0s;
+}
+.apples__apple:nth-child(2) {
+	position: absolute;
+	top: 250px;
+	left:300px;
+	background: rgb(10, 90, 3);
+	overflow: hidden;
+}
+
+.apples__apple:nth-child(2) .apple__body{
+	transform: translate(100%,0%);
+}
+.apples__apple:nth-child(2):hover .apple__body{
+	transform: translate(0%,0%);
+	transition: all 0.3s ease 0s;
+}
+.apples__apple:nth-child(2):hover{
+	background: none;
+	transition: all 0.3s ease 0s;
+}
+.apples__apple:nth-child(3) {
+	position: absolute;
+	top: 350px;
+	left:200px;
+}
+.apples__apple:nth-child(3):hover .apple__body{
+	transform: scale(0.6) skew(-20deg,30deg);
+	transition: all 0.3s ease 0s;
+}
+.apples__apple:nth-child(4) {
+	position: absolute;
+	top: 290px;
+	left:230px;
+	perspective: 40px;
+	perspective-origin: center;
+}
+.apples__apple:nth-child(4):hover .apple__body{
+	transform: rotateX(50deg);
+	transition: all 0.3s ease 0s;
+}
+.apples__apple:nth-child(5) {
+	position: absolute;
+	top: 210px;
+	left:270px;
+	perspective: 60px;
+	perspective-origin: center;
+}
+.apples__apple:nth-child(5):hover .apple__body{
+	transform: translate3d(10px,-10px,-20px);
+	transition: all 0.3s ease 0s;
+}
+.apples__apple:nth-child(6) {
+	position: absolute;
+	top: 330px;
+	left:300px;
+	perspective: 60px;
+	perspective-origin: center;
+}
+.apples__apple:nth-child(6):hover .apple__body{
+	transform: scale3d(0.5,1.2,2);
+	transition: all 0.3s ease 0s;
+}
+.apples__apple:nth-child(7) {
+	position: absolute;
+	top: 220px;
+	left:360px;
+	perspective: 60px;
+	perspective-origin: center;
+}
+.apples__apple:nth-child(7):hover .apple__body{
+	transform: rotate3d(2,5,5,-50deg);
+	transition: all 0.3s ease 0s;
+}
+.apples__apple:nth-child(8) {
+	position: absolute;
+	top: 280px;
+	left:370px;
+	perspective: 60px;
+	perspective-origin: center;
+}
+.apples__apple:nth-child(8):hover .apple__body{
+	transform: rotate3d(5,5,5,20deg);
+	transition: all 0.3s ease 0s;
+}
+/* =========   ship  ======================== */
+.ships__ship{
+	z-index: 7;
+}
+
+.ship__body {
+	perspective: 100px;
+	transform-style: preserve-3d;
+	z-index: 7;
+	background-color: rgba(255, 255, 255, 0.199);
+}
+.ship__image{
+	background: url("../img/ship.png") 0 0/cover;
+}
+.ships__ship:nth-child(1) {
+	position: absolute;
+	top: 500px;
+	left: 200px;
+	width: 200px;
+	height: 150px;
+	
+}
+.ships__ship:nth-child(1) .ship__image {
+	width: 200px;
+	height: 150px;
+	transform: rotateY(-180deg);
+}
+.ships__ship:nth-child(1):hover .ship__image{
+	transform: rotateY(0deg);
+	transition: all 1s ease 0s;
+}
+
+.ships__ship:nth-child(2) {
+	position: absolute;
+	top: 550px;
+	left: 20px;
+	width: 120px;
+	height: 90px;
+}
+.ships__ship:nth-child(2) .ship__image {
+	width: 120px;
+	height: 90px;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
+.ships__ship:nth-child(2):hover .ship__image{
+	transform: rotateY(-180deg);
+	transition: all 1.5s ease 0s;
+}
+
+
+
+/*================  FOOTER   ============================================*/
+.footer {
+	text-align: right;
+	font-family: Parisienne;
+	font-weight: 700;
+	font-size: 30px;
+	text-shadow: 3px 3px 5px rgb(148, 4, 243);
+}
